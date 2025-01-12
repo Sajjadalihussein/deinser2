@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة تصميم</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom SASS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .service-cards .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-cards .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1><i class="fas fa-paint-brush"></i> شركة تصميم</h1>
+            <p>حيث تتحقق الأفكار</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">الرئيسية</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">عن الشركة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center justify-content-center">
+        <div>
+            <h1>نصمم لك المستقبل</h1>
+            <p>نقدم حلول تصميم احترافية تلبي جميع احتياجاتك</p>
+            <a href="#services" class="btn btn-primary btn-lg mt-3">اكتشف خدماتنا</a>
+        </div>
+    </section>
+
+    <section class="services py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-4">خدماتنا</h2>
+            <div class="row service-cards">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">تصميم مواقع</h3>
+                            <p class="card-text">نحول رؤيتك إلى موقع إلكتروني مذهل.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-palette fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">تصميم شعارات</h3>
+                            <p class="card-text">نبتكر شعارات تعكس هوية عملك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">تصميم مواد تسويقية</h3>
+                            <p class="card-text">من الملصقات إلى الكتيبات، نصمم كل ما تحتاجه للترويج.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>© 2025 شركة تصميم. جميع الحقوق محفوظة. | <a href="#contact">تواصل معنا</a></p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
